@@ -12,7 +12,7 @@
     "tdd": "NODE_ENV=test mocha --compilers js:babel-register --reporter=nyan --watch test",
     "postbuild": "cp ./src/index.html ./build/index.html",
     "build": "babel src -d build",
-    "start": "nodemon ./build/server.js"
+    "start": "node ./build/server.js"
   },
   "license": "MIT",
   "dependencies": {
