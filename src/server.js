@@ -5,7 +5,7 @@
 import express from 'express'
 import timeProcessor from './time_processor'
 
-let port = process.env.$PORT || 8850;
+let port = process.env.PORT || 8850;
 let app = express();
 
 
