@@ -18,6 +18,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Created by gabrielkunkel on 11/3/16 in JavaScript.
  */
 
+var port = process.env.$PORT || 8850;
 var app = (0, _express2.default)();
 
 app.use(_express2.default.static(__dirname));
@@ -26,6 +27,6 @@ app.get('/:val', function (req, res) {
   res.json((0, _time_processor2.default)(req.params.val));
 });
 
-app.listen(8850);
+app.listen(port);
 
 exports.default = app;
