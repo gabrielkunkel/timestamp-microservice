@@ -1,6 +1,9 @@
 {
   "name": "node-timestamp-microservice",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.2.0"
+  },
   "description": "Full-Stack JavaScript application that takes unix or natural language timestamp string as perameter and returns it in unix timestamp and natural language form json.",
   "main": "./build/server.js",
   "author": "@GabrielKunkel",

@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import time_processor from './time_processor'
+import time_processor from '../src/time_processor'
 
 const should = chai.should();
 
