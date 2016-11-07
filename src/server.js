@@ -5,7 +5,9 @@
 import express from 'express'
 import timeProcessor from './time_processor'
 
+let port = process.env.$PORT || 8850;
 let app = express();
+
 
 app.use(express.static(__dirname));
 
@@ -13,6 +15,6 @@ app.get('/:val', function (req, res) {
   res.json(timeProcessor(req.params.val));
 });
 
-app.listen(8850);
+app.listen(port);
 
 export default app;
